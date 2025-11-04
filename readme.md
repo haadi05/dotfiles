@@ -1,6 +1,6 @@
 # Dotfiles
 
-Personal dotfiles focused on **productivity** and **minimalism** — for fast, and distraction-free Linux **(Omarchy)** workflow.
+Personal dotfiles focused on **productivity** and **minimalism** — for fast, and distraction-free Linux workflow.
 
 ## Download
 
