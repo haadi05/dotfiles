@@ -1,0 +1,71 @@
+{
+ //vim configurations
+  "vim.normalModeKeyBindingsNonRecursive": [
+      {
+      "before": ["<Esc>"],
+      "when": ["editorFocus"],
+      "commands": [":nohl"], 
+      "silent": true
+    }
+  ], 
+  //vim extention performance  
+  "editor.lineNumbers": "relative",
+  "vim.useSystemClipboard": true, 
+  "vim.hlsearch": true,
+  "extensions.experimental.affinity": {
+  "vscodevim.vim": 1 
+  },
+  
+  //disable ai features
+  "chat.commandCenter.enabled": false,
+  "chat.disableAIFeatures": true,
+  
+  //ui
+  "editor.fontSize": 16, 
+  "terminal.integrated.fontSize": 16,
+  "editor.fontFamily": "'Agave', 'Droid Sans Mono', monospace",
+  "editor.minimap.enabled": false,
+  "symbols.hidesExplorerArrows": false,
+  "window.titleBarStyle": "native",
+  "window.menuBarVisibility": "toggle",
+  "window.customTitleBarVisibility": "never",
+  "breadcrumbs.enabled": false,
+  "workbench.colorTheme": "Nord Wave",
+  "workbench.startupEditor": "none",
+  "workbench.tips.enabled": false,
+  "workbench.activityBar.location": "top",
+  "workbench.tree.indent": 10,
+  "workbench.panel.defaultLocation": "right",
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.iconTheme": "icons",
+  "workbench.editor.tabActionCloseVisibility": false,
+  "explorer.compactFolders":false,
+  "explorer.confirmDragAndDrop": false,
+  
+  //terminal
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.automationShell.linux": "/usr/bin/zsh",
+  "code-runner.runInTerminal": true,
+
+  //behaviour
+  "editor.defaultFormatter": "ms-vscode.cpptools",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "workbench.navigationControl.enabled": false,
+  "editor.formatOnSave": true,
+  "explorer.confirmDelete": false,
+  "window.commandCenter": false,
+  "git.confirmSync": false,
+  "editor.snippetSuggestions": "top",
+  "workbench.layoutControl.enabled": false,
+  "editor.linkedEditing": true,
+  
+  //others
+  "json.schemas": [],
+  "extensions.allowed": "*",
+  "extensions.supportUntrustedWorkspaces": {},
+  "terminal.integrated.env.linux": {},
+  "workbench.settings.applyToAllProfiles": [],
+  "liveServer.settings.donotVerifyTags": true,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+}
