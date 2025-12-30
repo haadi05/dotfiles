@@ -90,11 +90,6 @@
     "when": "vim.mode == 'Normal' && editorTextFocus"
   },
   {
-    "key": "shift-k", // vim classic. Why not just "gh" instead? Idk.
-    "command": "editor.action.showHover",
-    "when": "vim.mode == 'Normal' && editorTextFocus"
-  },
-  {
     "key": "space f m", // [F]or[m]at
     "command": "editor.action.formatDocument",
     "when": "vim.mode == 'Normal' && editorTextFocus"
@@ -125,11 +120,6 @@
   {
     "key": "shift-tab",
     "command": "workbench.action.previousEditorInGroup",
-    "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && (editorTextFocus || !inputFocus)"
-  },
-  {
-    "key": "space t", // Close o[T]her editors
-    "command": "workbench.action.closeOtherEditors",
     "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && (editorTextFocus || !inputFocus)"
   },
   // ======= FILE TREE ========
@@ -228,27 +218,33 @@
   },
   // ======= TERMINAL ========
   {
-    "key": "ctrl+shift+j",
-    "command": "workbench.action.togglePanel"
+    "key": "space t t",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "vim.mode == 'Normal' && !terminalFocus" // Only when NOT in terminal
   },
   {
-    "key": "ctrl+shift+b",
-    "command": "workbench.action.terminal.focusNext",
+    "key": "escape",
+    "command": "workbench.action.togglePanel",
     "when": "terminalFocus"
   },
   {
-    "key": "ctrl+shift+a",
+    "key": "space t n",
+    "command": "workbench.action.terminal.new",
+    "when": "vim.mode == 'Normal' && !terminalFocus" // Only when NOT in terminal
+  },
+  {
+    "key": "space t d",
+    "command": "workbench.action.terminal.kill",
+    "when": "vim.mode == 'Normal' && !terminalFocus" // Only when NOT in terminal
+  },
+  {
+    "key": "shift-j",
     "command": "workbench.action.terminal.focusPrevious",
     "when": "terminalFocus"
   },
   {
-    "key": "ctrl+shift+n",
-    "command": "workbench.action.terminal.new",
-    "when": "terminalFocus"
-  },
-  {
-    "key": "ctrl+shift+q",
-    "command": "workbench.action.terminal.kill",
+    "key": "shift-k",
+    "command": "workbench.action.terminal.focusNext",
     "when": "terminalFocus"
   },
   // ======= EDITOR ========
@@ -316,7 +312,7 @@
     "key": "cmd+n",
     "command": "-workbench.action.files.newUntitledFile"
   },
-    // ======= vscode ========
+  // ======= vscode ========
   {
     "key": "escape",
     "command": "composer.closeComposerTab",
