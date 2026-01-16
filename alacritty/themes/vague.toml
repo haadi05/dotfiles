@@ -1,0 +1,25 @@
+# Colors (Vague)
+
+[colors.primary]
+background = '#141415'
+foreground = '#cdcdcd'
+
+[colors.normal]
+black   = '#141415'
+red     = '#d8647e'
+green   = '#7fa563'
+yellow  = '#f3be7c'
+blue    = '#7e98e8'
+magenta = '#bb9dbd'
+cyan    = '#b4d4cf'
+white   = '#cdcdcd'
+
+[colors.bright]
+black   = '#141415'
+red     = '#d8647e'
+green   = '#7fa563'
+yellow  = '#f3be7c'
+blue    = '#7e98e8'
+magenta = '#bb9dbd'
+cyan    = '#b4d4cf'
+white   = '#cdcdcd'

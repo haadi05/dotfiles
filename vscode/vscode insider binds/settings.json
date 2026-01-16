@@ -1,5 +1,5 @@
 {
- //vim configurations
+ // Vim configurations
   "vim.normalModeKeyBindingsNonRecursive": [
       {
       "before": ["<Esc>"],
@@ -30,7 +30,6 @@
   "window.menuBarVisibility": "toggle",
   "window.customTitleBarVisibility": "never",
   "breadcrumbs.enabled": false,
-  "workbench.colorTheme": "Nord Wave",
   "workbench.startupEditor": "none",
   "workbench.tips.enabled": false,
   "workbench.activityBar.location": "top",
@@ -42,6 +41,7 @@
   "workbench.editor.tabActionCloseVisibility": false,
   "explorer.compactFolders":false,
   "explorer.confirmDragAndDrop": false,
+  "terminal.integrated.defaultLocation": "editor",
   
   //terminal
   "terminal.integrated.defaultProfile.linux": "zsh",
@@ -68,4 +68,7 @@
   "workbench.settings.applyToAllProfiles": [],
   "liveServer.settings.donotVerifyTags": true,
   "javascript.updateImportsOnFileMove.enabled": "never",
+  "workbench.colorTheme": "Vague",
+  "terminal.integrated.altClickMovesCursor": false,
+  "editor.cursorBlinking": "smooth",
 }
