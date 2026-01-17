@@ -1,0 +1,31 @@
+MenuBar=Disabled
+
+[CompactMode]
+IconSize=32
+
+[ContextMenu]
+ShowAddToPlaces=false
+ShowViewMode=false
+
+[DetailsMode]
+IconSize=22
+PreviewSize=22
+
+[General]
+ShowFullPathInTitlebar=true
+ShowStatusBar=Disabled
+Version=202
+ViewPropsTimestamp=2025,10,21,11,23,16.223
+
+[IconsMode]
+IconSize=64
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+
+[MainWindow]
+MenuBar=Disabled
+
+[PreviewSettings]
+Plugins=glycin-heif,comicbookthumbnail,cursorthumbnail,djvuthumbnail,exrthumbnail,imagethumbnail,glycin-image-rs,jpegthumbnail,glycin-jxl,glycin-svg,svgthumbnail
