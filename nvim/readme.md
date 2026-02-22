@@ -20,3 +20,9 @@ git clone https://github.com/nvim-telescope/telescope.nvim \
 git clone https://github.com/MeanderingProgrammer/render-markdown.nvim \
 ~/.local/share/nvim/site/pack/plugins/start/render-markdown.nvim
 ```
+
+```bash
+git clone https://github.com/haadi05/dotfiles.git
+cd dotfiles/nvim
+cp -r . ~/.config/nvim
+```
