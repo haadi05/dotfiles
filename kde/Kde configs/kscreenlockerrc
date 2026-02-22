@@ -1,0 +1,11 @@
+[Daemon]
+LockGrace=0
+Timeout=10
+
+[Greeter][LnF][General]
+showMediaControls=false
+
+[Greeter][Wallpaper][org.kde.image][General]
+Image=/home/hadi/Data/walls/Landscape/karokrasinska-QYH4emkD6mU-unsplash.jpg
+PreviewImage=/home/hadi/Data/walls/Landscape/karokrasinska-QYH4emkD6mU-unsplash.jpg
+SlidePaths=/usr/share/wallpapers/

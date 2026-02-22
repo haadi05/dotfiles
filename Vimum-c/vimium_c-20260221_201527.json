@@ -1,0 +1,60 @@
+{
+	"name": "Vimium C",
+	"@time": "2/21/2026, 8:15:27 PM",
+	"time": 1771686927833,
+	"environment": {
+		"extension": "2.12.2",
+		"platform": "linux",
+		"chromium": 145
+	},
+	"exclusionRules": [
+		{
+			"passKeys": "0 < > ",
+			"pattern": ":https://www.youtube.com/"
+		},
+		{
+			"passKeys": "",
+			"pattern": "^https://www\\.typedojo\\.com/"
+		}
+	],
+	"keyLayout": 2,
+	"keyMappings": [
+		"#!no-check",
+		"map o Vomnibar.activateInNewTab",
+		"map p openCopiedUrlInNewTab",
+		"unmap P",
+		"unmap J",
+		"unmap K",
+		"unmap t",
+		"unmap x",
+		"unmap b",
+		"unmap B",
+		"unmap gn",
+		""
+	],
+	"newTabUrl": "about:blank",
+	"searchUrl": "https://duckduckgo.com/",
+	"userDefinedCss": [
+		"/* Hint labels */",
+		".LH, .D > .LH {",
+		"    background: #ffffff !important; /* white background */",
+		"    color: #000000 !important;      /* black text */",
+		"    border: none !important;        /* remove border */",
+		"    background-image: none !important; /* remove gradient */",
+		"}",
+		"",
+		"/* Hover effect */",
+		".LH:hover, .D > .LH:hover {",
+		"    background: #eeeeee !important; /* light grey on hover */",
+		"    color: #000000 !important;",
+		"    border: none !important;        /* ensure no border on hover */",
+		"}",
+		"",
+		"/* Remove any hint shadow */",
+		".LH:after, .D > .LH:after {",
+		"    box-shadow: none !important;",
+		"}",
+		""
+	],
+	"vimSync": true
+}

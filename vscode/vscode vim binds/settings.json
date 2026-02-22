@@ -1,29 +1,30 @@
 {
- // Vim configurations
+  // Vim configurations
   "vim.normalModeKeyBindingsNonRecursive": [
-      {
+    {
       "before": ["<Esc>"],
       "when": ["editorFocus"],
-      "commands": [":nohl"], 
-      "silent": true
-    }
-  ], 
-  //vim extention performance  
+      "commands": [":nohl"],
+      "silent": true,
+    },
+  ],
   "editor.lineNumbers": "relative",
-  "vim.useSystemClipboard": true, 
+  "vim.useSystemClipboard": true,
+  "vim.handleKeys": { "<Space>": false },
   "vim.hlsearch": true,
+  //vim extention performance
   "extensions.experimental.affinity": {
-  "vscodevim.vim": 1 
+    "vscodevim.vim": 1,
   },
-  
+
   //disable ai features
   "chat.commandCenter.enabled": false,
   "chat.disableAIFeatures": true,
-  
+
   //ui
-  "editor.fontSize": 16, 
-  "terminal.integrated.fontSize": 16,
-  "editor.fontFamily": "'Agave', 'Droid Sans Mono', monospace",
+  "editor.fontSize": 14,
+  "editor.fontFamily": "'JetBrains Mono', 'Droid Sans Mono', monospace",
+  "editor.lineHeight": 20,
   "editor.minimap.enabled": false,
   "symbols.hidesExplorerArrows": false,
   "window.titleBarStyle": "native",
@@ -37,38 +38,35 @@
   "workbench.panel.defaultLocation": "right",
   "workbench.secondarySideBar.defaultVisibility": "hidden",
   "workbench.editor.empty.hint": "hidden",
-  "workbench.iconTheme": "icons",
   "workbench.editor.tabActionCloseVisibility": false,
-  "explorer.compactFolders":false,
+  "explorer.compactFolders": false,
   "explorer.confirmDragAndDrop": false,
-  "terminal.integrated.defaultLocation": "editor",
-  
+
   //terminal
   "terminal.integrated.defaultProfile.linux": "zsh",
   "terminal.integrated.automationShell.linux": "/usr/bin/zsh",
-  "code-runner.runInTerminal": true,
+  "terminal.integrated.fontFamily": "JetBrains Mono NL",
+  "terminal.integrated.fontSize": 14,
 
   //behaviour
-  "editor.defaultFormatter": "ms-vscode.cpptools",
-  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.cursorSmoothCaretAnimation": "off",
   "workbench.navigationControl.enabled": false,
   "editor.formatOnSave": true,
   "explorer.confirmDelete": false,
   "window.commandCenter": false,
   "git.confirmSync": false,
-  "editor.snippetSuggestions": "top",
   "workbench.layoutControl.enabled": false,
   "editor.linkedEditing": true,
-  
+
   //others
   "json.schemas": [],
   "extensions.allowed": "*",
   "extensions.supportUntrustedWorkspaces": {},
   "terminal.integrated.env.linux": {},
   "workbench.settings.applyToAllProfiles": [],
-  "liveServer.settings.donotVerifyTags": true,
   "javascript.updateImportsOnFileMove.enabled": "never",
-  "workbench.colorTheme": "Vague",
-  "terminal.integrated.altClickMovesCursor": false,
-  "editor.cursorBlinking": "smooth",
+  "workbench.iconTheme": "charmed-icons",
+  "window.zoomPerWindow": false,
+  "window.zoomLevel": 1,
 }

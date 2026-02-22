@@ -1,0 +1,13 @@
+[Libinput][1133][16471][Logitech B330/M330/M331]
+ScrollFactor=1.5
+
+[Libinput][2][8][AlpsPS/2 ALPS GlidePoint]
+DisableEventsOnExternalMouse=true
+NaturalScroll=true
+PointerAcceleration=0.000
+ScrollMethod=1
+TapDragLock=true
+
+[Mouse]
+cursorSize=32
+cursorTheme=Moga-Candy-Grey-Cursor

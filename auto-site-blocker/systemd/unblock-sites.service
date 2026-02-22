@@ -1,6 +1,0 @@
-[Unit]
-Description=Unblock YouTube and Reddit
-
-[Service]
-Type=oneshot
-ExecStart=/usr/local/bin/unblock_sites.sh

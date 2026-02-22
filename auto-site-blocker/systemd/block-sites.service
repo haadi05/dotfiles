@@ -1,6 +1,0 @@
-[Unit]
-Description=Block YouTube and Reddit
-
-[Service]
-Type=oneshot
-ExecStart=/usr/local/bin/block_sites.sh

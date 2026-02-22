@@ -12,8 +12,8 @@
     "when": "vim.mode == 'Normal' && editorTextFocus"
   },
   {
-    "key": "space d", // Write current file WITHOUT formatting,
-    "command": "workbench.action.files.saveWithoutFormatting",
+    "key": "space q", // [Q]uit
+    "command": "workbench.action.closeActiveEditor",
     "when": "vim.mode == 'Normal' && editorTextFocus"
   },
   {
@@ -23,11 +23,6 @@
       "commands": ["workbench.view.scm", "workbench.scm.focus"]
     },
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
-  },
-  {
-    "key": "space q", // [Q]uit
-    "command": "workbench.action.closeActiveEditor",
-    "when": "vim.mode == 'Normal' && editorTextFocus"
   },
   {
     "key": "space c a", // [C]ode [A]ction
