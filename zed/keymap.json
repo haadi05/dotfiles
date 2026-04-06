@@ -1,0 +1,46 @@
+[
+  // ======= PANE NAVIGATION ========
+  {
+    "context": "Editor || Terminal || ProjectPanel || Dock",
+    "bindings": {
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-j": "workspace::ActivatePaneDown",
+    },
+  },
+  // ======= LEADER BINDS ========
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "space e": "project_panel::Toggle",
+      "space g g": "git_panel::Toggle",
+      "space c a": "editor::ToggleCodeActions",
+      "space f f": "file_finder::Toggle",
+      "space s": "pane::SplitAndMoveRight",
+      "space v": "pane::SplitAndMoveDown",
+      "space f m": "editor::Format",
+    },
+  },
+  // ======= PROJECT PANEL (File Tree) ========
+  {
+    "context": "ProjectPanel && !editing",
+    "bindings": {
+      "r": "project_panel::Rename",
+      "a": "project_panel::NewFile",
+      "ctrl-a": "project_panel::NewDirectory",
+      "d": "project_panel::Delete",
+      "x": "project_panel::Cut",
+      "c": "project_panel::Copy",
+      "p": "project_panel::Paste",
+    },
+  },
+  // ======= EDITOR / SUGGESTIONS ========
+  {
+    "context": "Editor && showing_completions",
+    "bindings": {
+      "tab": "editor::ContextMenuNext",
+      "shift-tab": "editor::ContextMenuPrevious",
+    },
+  },
+]
