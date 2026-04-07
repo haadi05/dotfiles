@@ -11,10 +11,15 @@
   },
   // ======= LEADER BINDS ========
   {
-    "context": "Editor && vim_mode == normal",
+    "context": "Editor && vim_mode == normal || ProjectPanel || EmptyPane",
     "bindings": {
       "space e": "project_panel::Toggle",
       "space g g": "git_panel::Toggle",
+    },
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
       "space c a": "editor::ToggleCodeActions",
       "space f f": "file_finder::Toggle",
       "space s": "pane::SplitAndMoveRight",

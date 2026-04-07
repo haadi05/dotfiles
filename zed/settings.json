@@ -12,13 +12,13 @@
   //theme
   "theme": {
     "mode": "dark",
-    "light": "One Light",
+    "light": "Vague",
     "dark": "Vague",
   },
   "icon_theme": {
     "mode": "dark",
-    "light": "Warm Charmed Icons",
-    "dark": "Warm Charmed Icons",
+    "light": "Monospace Icon Theme - Dark",
+    "dark": "Monospace Icon Theme - Dark",
   },
 
   //fonts
@@ -42,16 +42,28 @@
   "show_completion_documentation": false,
   "hide_mouse": "on_typing_and_movement",
   "auto_update": false,
+  "extend_comment_on_newline": false,
+
+  //terminal
+  "terminal": {
+    "button": false,
+    "shell": {
+      "program": "/bin/zsh",
+    },
+    "working_directory": "current_project_directory",
+  },
 
   //ui
-  "tabs": {
-    "file_icons": true,
-  },
   "title_bar": {
     "show_onboarding_banner": false,
-    "show_branch_name": false,
     "show_user_menu": false,
     "show_sign_in": false,
+  },
+  "tab_bar": {
+    "show_nav_history_buttons": false,
+  },
+  "tabs": {
+    "file_icons": true,
   },
   "toolbar": {
     "breadcrumbs": false,
@@ -79,7 +91,7 @@
   "debugger": {
     "button": false,
   },
-  "terminal": {
+  "notification_panel": {
     "button": false,
   },
 }
