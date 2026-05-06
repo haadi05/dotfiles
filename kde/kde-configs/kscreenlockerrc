@@ -1,0 +1,6 @@
+[Daemon]
+Timeout=10
+
+[Greeter][Wallpaper][org.kde.image][General]
+Image=/usr/share/wallpapers/Mountain/contents/images_dark/5120x2880.png
+PreviewImage=/usr/share/wallpapers/Mountain/contents/images_dark/5120x2880.png

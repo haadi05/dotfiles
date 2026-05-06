@@ -3,7 +3,7 @@ FreeFloating=true
 historyBehavior=ImmediateCompletion
 
 [Plugins]
-baloosearchEnabled=false
+baloosearchEnabled=true
 browserhistoryEnabled=false
 browsertabsEnabled=false
 helprunnerEnabled=false
