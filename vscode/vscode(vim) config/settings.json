@@ -1,7 +1,7 @@
 {
   //vim extention performance
   "extensions.experimental.affinity": {
-    "vscodevim.vim": 1,
+    "vscodevim.vim": 1
   },
 
   // Vim configurations
@@ -13,8 +13,8 @@
       "before": ["<Esc>"],
       "when": ["editorFocus"],
       "commands": [":nohl"],
-      "silent": true,
-    },
+      "silent": true
+    }
   ],
 
   //disable ai features
@@ -55,13 +55,17 @@
   //use system remaps
   "keyboard.dispatch": "keyCode",
 
-  //behavior (formatting,cursor)
+  //behavior (formatting, cursor, scrollbar)
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+
   "editor.cursorBlinking": "solid",
-  "files.trimTrailingWhitespace": true,
-  "editor.showFoldingControls": "never",
+
   "editor.scrollbar.vertical": "hidden",
   "editor.scrollbar.horizontal": "hidden",
+
+  "files.trimTrailingWhitespace": true,
+  "editor.showFoldingControls": "never",
   "js/ts.updateImportsOnFileMove.enabled": "never",
 
   //auto rename closing tag
@@ -77,10 +81,10 @@
       {
         "scope": "comment",
         "settings": {
-          "fontStyle": "italic",
-        },
-      },
-    ],
+          "fontStyle": "italic"
+        }
+      }
+    ]
   },
 
   //theme
@@ -102,7 +106,7 @@
 
       "terminal.background": "#16181d",
       "terminal.border": "#16181d",
-      "panel.background": "#16181d",
-    },
-  },
+      "panel.background": "#16181d"
+    }
+  }
 }
