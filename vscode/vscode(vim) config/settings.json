@@ -1,10 +1,15 @@
 {
+  //no telemetry
+  "telemetry.telemetryLevel": "off",
+  "rest-client.enableTelemetry": false,
+  "telemetry.feedback.enabled": false,
+
   //vim extention performance
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1
   },
 
-  // Vim configurations
+  //vim configurations
   "editor.lineNumbers": "relative",
   "vim.useSystemClipboard": true,
   "vim.hlsearch": true,
