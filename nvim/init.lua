@@ -1,6 +1,24 @@
 -- leader
 vim.g.mapleader = " "
 
+-- Bootstrap lazy.nvim
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not vim.loop.fs_stat(lazypath) then
+  vim.fn.system({
+    "git", "clone", "--filter=blob:none",
+    "https://github.com/folke/lazy.nvim.git",
+    "--branch=stable", lazypath,
+  })
+end
+vim.opt.rtp:prepend(lazypath)
+
+-- Load plugins
+require("lazy").setup({
+  "nvim-lua/plenary.nvim",
+  "nvim-telescope/telescope.nvim",
+  "MeanderingProgrammer/render-markdown.nvim",
+})
+
 -- general
 vim.opt.clipboard = "unnamedplus"
 vim.opt.undofile = true
@@ -29,14 +47,10 @@ vim.opt.conceallevel = 2
 require("plugins").setup()
 
 -- keymaps
-vim.keymap.set("n", "<leader>w", "<cmd>write<cr>")
-vim.keymap.set("n", "<leader>q", "<cmd>quit<cr>")
 vim.keymap.set("n", "<esc>", "<cmd>nohlsearch<cr>")
-
 vim.keymap.set("n", "<leader>c", function()
   vim.cmd("edit " .. vim.fn.stdpath("config") .. "/init.lua")
 end, { silent = true })
-
 vim.keymap.set("n", "<leader>r", function()
   vim.cmd("source " .. vim.fn.stdpath("config") .. "/init.lua")
   print("Config reloaded")
@@ -45,7 +59,6 @@ end, { silent = true })
 -- checkbox toggle
 vim.keymap.set("n", "<C-l>", function()
   local line = vim.api.nvim_get_current_line()
-
   if line:match("^%- %[%s%] ") then
     line = line:gsub("^%- %[%s%] ", "- [x] ")
   elseif line:match("^%- %[x%] ") then
@@ -53,6 +66,5 @@ vim.keymap.set("n", "<C-l>", function()
   else
     line = "- [ ] " .. line
   end
-
   vim.api.nvim_set_current_line(line)
 end, { silent = true })
