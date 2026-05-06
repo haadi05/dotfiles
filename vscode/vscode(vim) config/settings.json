@@ -1,0 +1,108 @@
+{
+  //vim extention performance
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1,
+  },
+
+  // Vim configurations
+  "editor.lineNumbers": "relative",
+  "vim.useSystemClipboard": true,
+  "vim.hlsearch": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<Esc>"],
+      "when": ["editorFocus"],
+      "commands": [":nohl"],
+      "silent": true,
+    },
+  ],
+
+  //disable ai features
+  "chat.disableAIFeatures": true,
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+
+  //font
+  "editor.fontFamily": "'JetBrainsMono Nerd Font', 'Droid Sans Mono', monospace",
+  "editor.lineHeight": 20,
+  "editor.fontLigatures": true,
+
+  //hide top cluter
+  "window.titleBarStyle": "native",
+  "window.menuBarVisibility": "toggle",
+  "window.customTitleBarVisibility": "never",
+
+  //ui
+  "window.zoomLevel": 1,
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.activityBar.location": "hidden",
+  "workbench.startupEditor": "none",
+  "workbench.tips.enabled": false,
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": false,
+
+  //tab ui
+  "workbench.editor.tabActionCloseVisibility": false,
+  "window.density.editorTabHeight": "compact",
+
+  //side bar
+  "workbench.sideBar.location": "right",
+  "workbench.iconTheme": "charmed-icons",
+  "charmed-icons.hidesExplorerArrows": true,
+  "workbench.tree.indent": 12,
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
+
+  //use system remaps
+  "keyboard.dispatch": "keyCode",
+
+  //behavior (formatting,cursor)
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.cursorBlinking": "solid",
+  "files.trimTrailingWhitespace": true,
+  "editor.showFoldingControls": "never",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.horizontal": "hidden",
+  "js/ts.updateImportsOnFileMove.enabled": "never",
+
+  //auto rename closing tag
+  "editor.linkedEditing": true,
+
+  //terminal
+  "terminal.integrated.initialHint": false,
+  "terminal.integrated.defaultLocation": "editor",
+
+  //italic fonts
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic",
+        },
+      },
+    ],
+  },
+
+  //theme
+  "workbench.colorTheme": "React Dev Theme (dark)",
+  "workbench.colorCustomizations": {
+    "[React Dev Theme (dark)]": {
+      "sideBar.background": "#16181d",
+
+      //tab bar
+      "editorGroupHeader.tabsBackground": "#16181d",
+      "tab.activeBackground": "#16181d",
+      "tab.inactiveBackground": "#16181d",
+      "tab.unfocusedActiveBackground": "#16181d",
+      "tab.unfocusedInactiveBackground": "#16181d",
+
+      //status bar
+      "statusBar.background": "#16181d",
+      "statusBar.noFolderBackground": "#16181d",
+
+      "terminal.background": "#16181d",
+      "terminal.border": "#16181d",
+      "panel.background": "#16181d",
+    },
+  },
+}

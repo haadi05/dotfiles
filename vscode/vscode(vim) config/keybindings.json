@@ -1,0 +1,250 @@
+[
+  // terminal opened in editor tab
+  {
+    "key": "ctrl+`",
+    "command": "workbench.action.createTerminalEditor",
+  },
+
+  // navigation
+  {
+    "key": "ctrl-h",
+    "command": "workbench.action.navigateLeft",
+  },
+  {
+    "key": "ctrl-l",
+    "command": "workbench.action.navigateRight",
+  },
+  {
+    "key": "ctrl-k",
+    "command": "workbench.action.navigateUp",
+  },
+  {
+    "key": "ctrl-j",
+    "command": "workbench.action.navigateDown",
+  },
+
+  // file explorer/tree
+  {
+    "key": "space e", //Open file tree
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "workbench.action.toggleSidebarVisibility",
+        "workbench.files.action.focusFilesExplorer",
+      ],
+    },
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus) && !sideBarFocus",
+  },
+  {
+    "key": "space e",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "workbench.action.toggleSidebarVisibility",
+        "workbench.action.focusActiveEditorGroup",
+      ],
+    },
+    "when": "sideBarFocus && !inputFocus",
+  },
+  {
+    "key": "space e",
+    "when": "vim.mode == 'Normal' && editorTextFocus && foldersViewVisible",
+    "command": "workbench.action.toggleSidebarVisibility",
+  },
+  {
+    "key": "r",
+    "command": "renameFile",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus",
+  },
+  {
+    "key": "c",
+    "command": "filesExplorer.copy",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus",
+  },
+  {
+    "key": "p",
+    "command": "filesExplorer.paste",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus",
+  },
+  {
+    "key": "x",
+    "command": "filesExplorer.cut",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus",
+  },
+  {
+    "key": "d",
+    "command": "deleteFile",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus",
+  },
+  {
+    "key": "a",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus",
+  },
+  {
+    "key": "shift-a",
+    "command": "explorer.newFolder",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus",
+  },
+
+  // leader binds
+  {
+    "key": "space w", //[W]rite current file,
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "workbench.action.files.save",
+        "editor.action.formatDocument",
+      ],
+    },
+    "when": "vim.mode == 'Normal' && editorTextFocus",
+  },
+  {
+    "key": "space q", //[Q]uit
+    "command": "workbench.action.closeActiveEditor",
+    "when": "(vim.mode == 'Normal' && editorTextFocus) || !inputFocus",
+  },
+  {
+    "key": "space s", //[S]plit [S]ide
+    "command": "workbench.action.splitEditorRight",
+    "when": "vim.mode == 'Normal' && editorTextFocus",
+  },
+  {
+    "key": "space v", //Split [V]ertically
+    "command": "workbench.action.splitEditorDown",
+    "when": "vim.mode == 'Normal' && editorTextFocus",
+  },
+  {
+    "key": "space c a", //[C]ode [A]ction
+    "command": "editor.action.codeAction",
+    "when": "vim.mode == 'Normal' && editorTextFocus",
+  },
+  // {
+  //   "key": "space c r",
+  //   "command": "editor.action.rename",
+  //   "when": "vim.mode == 'Normal' && editorTextFocus",
+  // },
+  {
+    "key": "space f f", //[F]ind [F]ile
+    "command": "workbench.action.quickOpen",
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)",
+  },
+  {
+    "key": "space g s", //Find variables in a file
+    "command": "workbench.action.gotoSymbol",
+    "when": "vim.mode == 'Normal' && editorTextFocus",
+  },
+  {
+    "key": "space f g", //Open search
+    "command": "workbench.action.findInFiles",
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)",
+  },
+  {
+    "key": "space g g", //[G] [G]it
+    "command": "runCommands",
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)",
+    "args": {
+      "commands": ["workbench.view.scm", "workbench.scm.focus"],
+    },
+  },
+  {
+    "key": "ctrl-n", //Select same word in whole file
+    "command": "editor.action.addSelectionToNextFindMatch",
+    "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && (editorTextFocus || !inputFocus)",
+  },
+
+  // file tab
+  {
+    "key": "tab",
+    "command": "workbench.action.nextEditorInGroup",
+    "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && (editorTextFocus || !inputFocus)",
+  },
+  {
+    "key": "shift-tab",
+    "command": "workbench.action.previousEditorInGroup",
+    "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && (editorTextFocus || !inputFocus)",
+  },
+  {
+    "key": "space ,",
+    "command": "workbench.action.showAllEditors",
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)",
+  },
+
+  // editor
+  {
+    "key": "shift-k", //Move line up in visual line mode
+    "command": "editor.action.moveLinesUpAction",
+    "when": "vim.mode == 'VisualLine' && editorTextFocus",
+  },
+  {
+    "key": "shift-j", //Move line done in visual line mode
+    "command": "editor.action.moveLinesDownAction",
+    "when": "vim.mode == 'VisualLine' && editorTextFocus",
+  },
+  // 1. IntelliSense / Suggestion Widget Navigation
+  {
+    "key": "tab",
+    "command": "selectNextSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion",
+  },
+  {
+    "key": "shift+tab",
+    "command": "selectPrevSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion",
+  },
+  // Disable default arrow/tab behaviors inside suggestion list
+  {
+    "key": "down",
+    "command": "-selectNextSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion",
+  },
+  {
+    "key": "up",
+    "command": "-selectPrevSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion",
+  },
+  {
+    "key": "tab",
+    "command": "-acceptSelectedSuggestion",
+    "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus",
+  },
+  // 2. Quick Input / Command Palette Navigation
+  {
+    "key": "tab",
+    "command": "quickInput.next",
+    "when": "inQuickInput && quickInputType == 'quickPick'",
+  },
+  {
+    "key": "shift+tab",
+    "command": "quickInput.previous",
+    "when": "inQuickInput && quickInputType == 'quickPick'",
+  },
+  // 3. Problems / Markers Navigation (Errors & Warnings)
+  {
+    "key": "escape",
+    "command": "closeMarkersNavigation",
+    "when": "editorFocus && markersNavigationVisible",
+  },
+  // 4. Code Actions Menu (Quick Fix / Lightbulb)
+  {
+    "key": "tab",
+    "command": "selectNextCodeAction",
+    "when": "codeActionMenuVisible",
+  },
+  {
+    "key": "shift+tab",
+    "command": "selectPrevCodeAction",
+    "when": "codeActionMenuVisible",
+  },
+  // 5. Disable arrow navigation in code action menu
+  {
+    "key": "down",
+    "command": "-selectNextCodeAction",
+    "when": "codeActionMenuVisible",
+  },
+  {
+    "key": "up",
+    "command": "-selectPrevCodeAction",
+    "when": "codeActionMenuVisible",
+  },
+]
