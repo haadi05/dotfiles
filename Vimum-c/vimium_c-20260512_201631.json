@@ -1,0 +1,69 @@
+{
+	"name": "Vimium C",
+	"@time": "5/12/2026, 8:16:31 PM",
+	"time": 1778598991037,
+	"environment": {
+		"extension": "2.12.2",
+		"platform": "linux",
+		"chromium": 147
+	},
+	"exclusionRules": [
+		{
+			"passKeys": "0 < > ",
+			"pattern": ":https://www.youtube.com/"
+		}
+	],
+	"keyLayout": 2,
+	"keyMappings": [
+		"#!no-check",
+		"unmap o",
+		"unmap J",
+		"unmap K",
+		"unmap t",
+		"unmap x",
+		"unmap b",
+		"unmap gn",
+		"unmap p",
+		"unmap d",
+		"unmap u",
+		"map <c-d> scrollPageDown",
+		"map <c-u> scrollPageUp",
+		""
+	],
+	"newTabUrl": "about:blank",
+	"searchEngines": [
+		"go|gg|google|Google: https://www.google.com/search?q=%s \\",
+		"  www.google.com re=/^(?:\\.[a-z]{2,4})?\\/search\\b.*?[#&?]q=([^#&]*)/i \\",
+		"  blank=https://www.google.com/ Google",
+		"br|brave: https://search.brave.com/search?q=%s Brave",
+		"d|dd|ddg|duckduckgo: https://duckduckgo.com/?q=%s DuckDuckGo",
+		"qw|qwant: https://www.qwant.com/?q=%s Qwant",
+		"pp|perplexity: https://www.perplexity.ai/search?q=%s perplexity",
+		"",
+		"g.m|gm|g.map|gmap: https://www.google.com/maps?q=%s \\",
+		"  blank=https://www.google.com/maps Google Maps",
+		"y|yt: https://www.youtube.com/results?search_query=%s \\",
+		"  blank=https://www.youtube.com/ YouTube",
+		"w|wiki: https://www.wikipedia.org/w/index.php?search=%s Wikipedia",
+		"",
+		"\\:i: vimium://sed/s/^//,lower\\ $S re= Lower case",
+		"v.m|math: vimium://math\\ $S re= Calculate",
+		"v.p: vimium://parse\\ $S re= Redo Search",
+		"gh|github: https://github.com/search?q=$s \\",
+		"  blank=https://github.com/ GitHub Repo",
+		"js\\:|Js: javascript:\\ $S; JavaScript",
+		""
+	],
+	"searchUrl": "https://duckduckgo.com/",
+	"userDefinedCss": [
+		".LH, .D > .LH {",
+		"    background: #ffffff !important;",
+		"    color: #000000 !important;",
+		"    border: none !important;",
+		"    background-image: none !important;",
+		"    font-family: inherit !important;",
+		"}",
+		""
+	],
+	"vimSync": true
+}

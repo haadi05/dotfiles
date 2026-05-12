@@ -27,6 +27,7 @@
   "workbench.secondarySideBar.defaultVisibility": "hidden",
 
   //font
+  "editor.fontSize": 14,
   "editor.fontFamily": "'JetBrainsMono Nerd Font', 'Droid Sans Mono', monospace",
   "editor.lineHeight": 20,
   "editor.fontLigatures": true,
@@ -51,7 +52,7 @@
 
   //side bar
   "workbench.sideBar.location": "right",
-  "workbench.iconTheme": "charmed-icons",
+  "workbench.iconTheme": "charmed-warm",
   "charmed-icons.hidesExplorerArrows": true,
   "workbench.tree.indent": 12,
   "explorer.compactFolders": false,
@@ -63,6 +64,9 @@
   //behavior (formatting, cursor, scrollbar)
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
+  "[json][jsonc]": {
+    "prettier.trailingComma": "none"
+  },
 
   "editor.cursorBlinking": "solid",
 
@@ -91,27 +95,28 @@
       }
     ]
   },
-
-  //theme
-  "workbench.colorTheme": "React Dev Theme (dark)",
   "workbench.colorCustomizations": {
-    "[React Dev Theme (dark)]": {
-      "sideBar.background": "#16181d",
+    "[Nord Wave]": {
+      "editor.background": "#181818",
+      "sideBar.background": "#181818",
+      "tab.activeBackground": "#181818",
+      "editorGroupHeader.tabsBackground": "#181818",
+      "tab.inactiveBackground": "#181818",
+      "tab.unfocusedActiveBackground": "#181818",
+      "tab.unfocusedInactiveBackground": "#181818",
+      "statusBar.noFolderBackground": "#181818",
+      "statusBar.background": "#181818",
+      "terminal.background": "#181818",
+      "terminal.border": "#181818",
+      "panel.background": "#181818",
 
-      //tab bar
-      "editorGroupHeader.tabsBackground": "#16181d",
-      "tab.activeBackground": "#16181d",
-      "tab.inactiveBackground": "#16181d",
-      "tab.unfocusedActiveBackground": "#16181d",
-      "tab.unfocusedInactiveBackground": "#16181d",
-
-      //status bar
-      "statusBar.background": "#16181d",
-      "statusBar.noFolderBackground": "#16181d",
-
-      "terminal.background": "#16181d",
-      "terminal.border": "#16181d",
-      "panel.background": "#16181d"
+      "sideBar.foreground": "#CCCCCC",
+      "list.activeSelectionBackground": "#00000000",
+      "list.focusBackground": "#00000000",
+      "list.focusOutline": "#88c0d0",
+      "editor.lineHighlightBackground": "#00000000",
+      "editor.lineHighlightBorder": "#2c2c2c"
     }
-  }
+  },
+  "workbench.colorTheme": "Nord Wave"
 }

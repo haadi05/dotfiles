@@ -7,25 +7,25 @@
 
   // navigation
   {
-    "key": "ctrl-h",
+    "key": "ctrl+h",
     "command": "workbench.action.navigateLeft"
   },
   {
-    "key": "ctrl-l",
+    "key": "ctrl+l",
     "command": "workbench.action.navigateRight"
   },
   {
-    "key": "ctrl-k",
+    "key": "ctrl+k",
     "command": "workbench.action.navigateUp"
   },
   {
-    "key": "ctrl-j",
+    "key": "ctrl+j",
     "command": "workbench.action.navigateDown"
   },
 
   // file explorer/tree
   {
-    "key": "space e", //Open file tree
+    "key": "space e",
     "command": "runCommands",
     "args": {
       "commands": [
@@ -82,34 +82,39 @@
     "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
   },
   {
-    "key": "shift-a",
+    "key": "shift+a",
     "command": "explorer.newFolder",
     "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
   },
 
   // leader binds
+  // [W]rite current file
   {
-    "key": "space w", //[W]rite current file,
+    "key": "space w",
     "command": "workbench.action.files.save",
     "when": "vim.mode == 'Normal' && editorTextFocus"
   },
+  // [Q]uit
   {
-    "key": "space q", //[Q]uit
+    "key": "space q",
     "command": "workbench.action.closeActiveEditor",
     "when": "(vim.mode == 'Normal' && editorTextFocus) || !inputFocus"
   },
+  // [S]plit [S]ide
   {
-    "key": "space s", //[S]plit [S]ide
+    "key": "space s",
     "command": "workbench.action.splitEditorRight",
     "when": "vim.mode == 'Normal' && editorTextFocus"
   },
+  // Split [V]ertically
   {
-    "key": "space v", //Split [V]ertically
+    "key": "space v",
     "command": "workbench.action.splitEditorDown",
     "when": "vim.mode == 'Normal' && editorTextFocus"
   },
+  // [C]ode [A]ction
   {
-    "key": "space c a", //[C]ode [A]ction
+    "key": "space c a",
     "command": "editor.action.codeAction",
     "when": "vim.mode == 'Normal' && editorTextFocus"
   },
@@ -118,46 +123,59 @@
   //   "command": "editor.action.rename",
   //   "when": "vim.mode == 'Normal' && editorTextFocus",
   // },
+  // [F]ind [F]ile
   {
-    "key": "space f f", //[F]ind [F]ile
+    "key": "space f f",
     "command": "workbench.action.quickOpen",
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
   },
+  // Find variables in a file
   {
-    "key": "space g s", //Find variables in a file
+    "key": "space g s",
     "command": "workbench.action.gotoSymbol",
     "when": "vim.mode == 'Normal' && editorTextFocus"
   },
+  // Open search
   {
-    "key": "space f g", //Open search
+    "key": "space f g",
     "command": "workbench.action.findInFiles",
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
   },
+  // [G]it
   {
-    "key": "space g g", //[G] [G]it
+    "key": "space g g",
     "command": "runCommands",
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)",
     "args": {
       "commands": ["workbench.view.scm", "workbench.scm.focus"]
     }
   },
+  // Select same word in whole file
   {
-    "key": "ctrl-n", //Select same word in whole file
+    "key": "ctrl+n",
     "command": "editor.action.addSelectionToNextFindMatch",
     "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && (editorTextFocus || !inputFocus)"
   },
 
   // file tab
   {
-    "key": "tab",
-    "command": "workbench.action.nextEditorInGroup",
-    "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && (editorTextFocus || !inputFocus)"
+    "key": "ctrl+tab",
+    "command": "workbench.action.nextEditorInGroup"
   },
   {
-    "key": "shift-tab",
-    "command": "workbench.action.previousEditorInGroup",
-    "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && (editorTextFocus || !inputFocus)"
+    "key": "ctrl+shift+tab",
+    "command": "workbench.action.previousEditorInGroup"
   },
+  // {
+  //   "key": "tab",
+  //   "command": "workbench.action.nextEditorInGroup",
+  //   "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && (editorTextFocus || !inputFocus)"
+  // },
+  // {
+  //   "key": "shift+tab",
+  //   "command": "workbench.action.previousEditorInGroup",
+  //   "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && (editorTextFocus || !inputFocus)"
+  // },
   {
     "key": "space ,",
     "command": "workbench.action.showAllEditors",
@@ -165,16 +183,19 @@
   },
 
   // editor
+  // Move line up in visual line mode
   {
-    "key": "shift-k", //Move line up in visual line mode
+    "key": "shift+k",
     "command": "editor.action.moveLinesUpAction",
     "when": "vim.mode == 'VisualLine' && editorTextFocus"
   },
+  // Move line down in visual line mode
   {
-    "key": "shift-j", //Move line done in visual line mode
+    "key": "shift+j",
     "command": "editor.action.moveLinesDownAction",
     "when": "vim.mode == 'VisualLine' && editorTextFocus"
   },
+
   // 1. IntelliSense / Suggestion Widget Navigation
   {
     "key": "tab",
@@ -202,6 +223,7 @@
     "command": "-acceptSelectedSuggestion",
     "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
   },
+
   // 2. Quick Input / Command Palette Navigation
   {
     "key": "tab",
@@ -213,12 +235,14 @@
     "command": "quickInput.previous",
     "when": "inQuickInput && quickInputType == 'quickPick'"
   },
+
   // 3. Problems / Markers Navigation (Errors & Warnings)
   {
     "key": "escape",
     "command": "closeMarkersNavigation",
     "when": "editorFocus && markersNavigationVisible"
   },
+
   // 4. Code Actions Menu (Quick Fix / Lightbulb)
   {
     "key": "tab",
@@ -230,6 +254,7 @@
     "command": "selectPrevCodeAction",
     "when": "codeActionMenuVisible"
   },
+
   // 5. Disable arrow navigation in code action menu
   {
     "key": "down",

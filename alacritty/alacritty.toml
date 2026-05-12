@@ -1,4 +1,5 @@
-# ~/.config/alacritty/alacritty.toml
+[colors.primary]
+background = "#181818"
 
 [env]
 TERM = "xterm-256color"
