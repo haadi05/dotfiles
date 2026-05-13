@@ -1,0 +1,38 @@
+1920x1080 screen: Height=1030
+1920x1080 screen: Width=960
+1920x1080 screen: XPosition=0
+1920x1080 screen: YPosition=50
+HDMI-1=HDMI-1
+State=AAAA/wAAAAD9AAAAAQAAAAAAAADIAAADlfwCAAAAAfsAAAAcAG8AawB1AGwAYQByAF8AcwBpAGQAZQBiAGEAcgAAAABfAAADlQAAABMA////AAADwAAAA6cAAAAEAAAABAAAAAgAAAAI/AAAAAMAAAABAAAAAQAAACwAcQB1AGkAYwBrAEEAbgBuAG8AdABhAHQAaQBvAG4AVABvAG8AbABCAGEAcgIAAAAA/////wAAAAAAAAAAAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAAgAAAAEAAAAiAGEAbgBuAG8AdABhAHQAaQBvAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+
+[Desktop Entry]
+FullScreen=false
+
+[General]
+LockSidebar=false
+ShowSidebar=false
+
+[MainWindow]
+1280x720 screen: Height=714
+1280x720 screen: Width=1366
+1280x720 screen: XPosition=0
+1280x720 screen: YPosition=54
+1366x768 screen: Height=736
+1366x768 screen: Width=683
+1366x768 screen: XPosition=0
+1366x768 screen: YPosition=32
+1920x1080 screen: Height=1026
+1920x1080 screen: Width=1125
+1920x1080 screen: XPosition=0
+1920x1080 screen: YPosition=54
+2 screens: Height=1048
+2 screens: Width=960
+2 screens: XPosition=1366
+2 screens: YPosition=32
+:0.0=:0.0
+HDMI-1=HDMI-1
+HDMI-1 eDP-1=HDMI-1
+eDP-1=eDP-1
+
+[UiSettings]
+ColorScheme=
